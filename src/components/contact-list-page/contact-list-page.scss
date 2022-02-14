@@ -1,0 +1,38 @@
+.ContactListPage {
+  width: 100%;
+  padding: 0 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__profile-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E94E9;
+    padding: 10px 50px;
+    border-radius: 25px;
+
+    .user-image-wrapper {
+      .user-image {
+        border-radius: 50%;
+      }
+    }
+
+    .user-info-wrapper {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    .logOut-wrapper {
+      .logOut {
+        width: 120px;
+        height: 45px;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(149, 210, 255, 1);
+      }
+    }
+  }
+}

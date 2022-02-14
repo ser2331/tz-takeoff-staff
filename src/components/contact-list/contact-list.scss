@@ -1,0 +1,147 @@
+@import "../../assets/styles/mixins/mixins";
+
+.Contact-list-wrapper {
+  @include media($mobile) {
+    padding: 0;
+  }
+  @include media($tablet) {
+    padding: 10px 25px;
+  }
+
+  .search-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .search-input {
+      width: 500px;
+      background-color: #AFEEEE;
+      padding: 10px;
+      border: 0.5px solid #1E94E9;
+      border-radius: 25px 25px 25px 25px;
+    }
+
+    .search-btn {
+      position: absolute;
+      margin-left: 455px;
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+      background-color: #1E94E9;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .contacts-wrapper {
+    @include media($mobile) {
+      padding: 0;
+    }
+    @include media($tablet) {
+      padding: 0 100px;
+    }
+
+    .search-error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 360px;
+    }
+  }
+}
+
+.Contact {
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 1px;
+    border: 0.5px solid #1E94E9;
+    border-radius: 40px 25px 25px 40px;
+
+    .contact-imag-wrapper {
+      display: flex;
+      width: 80%;
+
+      .contact-information {
+        width: 100%;
+
+        .contact-name {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 42px;
+        }
+
+        .status-wrapper {
+          .status {
+            width: 80%;
+            height: 25px;
+            padding: 10px;
+            background-color: #AFEEEE;
+            border: none;
+            border-radius: 25px;
+            outline: none
+          }
+
+          .btn-submit {
+            background-color: #5ae86d;
+            border: none;
+            border-radius: 25px;
+            margin-left: -85px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .image-wrapper {
+        .contact-image {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .contact-btn-wrapper {
+      .red-contact {
+        border-radius: 25px 0 0 25px;
+        background-color: #5ae86d;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin-top: -40px;
+        right: 327px;
+        @include media($mobile) {
+          width: 60px;
+          height: 80px;
+          right: 202px;
+        }
+        @include media($tablet) {
+          width: 60px;
+          height: 80px;
+          right: 327px;
+        }
+      }
+
+      .delete-contact {
+        border-radius: 0 25px 25px 0;
+        background-color: #f25544;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin-top: -40px;
+        @include media($mobile) {
+          width: 60px;
+          height: 80px;
+          right: 142px;
+        }
+        @include media($tablet) {
+          width: 60px;
+          height: 80px;
+          right: 267px;
+        }
+      }
+    }
+  }
+}
